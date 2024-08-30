@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	float hipot, area, cat1, cat2, h, base;
+	
+	printf("Digite o valor do cateto 1: \n ");
+	scanf("%f", &cat1);
+	
+	printf("Digite o valor do cateto 2: \n ");
+	scanf("%f", &cat2);
+	
+	hipot= sqrt(pow(cat1,2)+pow(cat2,2));
+	
+	printf("O valor da hipotenusa e: %f \n", hipot);
+	
+	area =(cat1*cat2)/2;
+	
+	printf("A area desse triangulo e: %f \n", area);
+	
+	getchar();
+	return 0;
+}
