@@ -22,3 +22,30 @@ int main(){
     
     return 0;
 }
+
+---------------------------------------------------------------------------------------------------------------------------
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    int n;
+    
+    n=1;
+    
+    printf("Insira um número, caso for positivo, o programa se encerrará: \n");
+    scanf("%d", &n);
+    
+    while(n<0){
+        printf("Insira um número, caso for positivo, o programa se encerrará: \n");
+    scanf("%d", &n);
+        
+    }
+    
+    printf("%d", n);
+    
+    
+    return 0;
+}
