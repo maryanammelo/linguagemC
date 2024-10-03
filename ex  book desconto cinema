@@ -23,7 +23,7 @@ else{
 return 0; 
 }
 
-
+--------------------------------------------------------------------------
 
 #include <math.h>
 #include <stdio.h>
@@ -44,6 +44,29 @@ if((idoso==1) || (estudante==1)){
     printf("Voce tem desconto! \n");
 }else{
     printf("Infelizmente voce nao tem desconto :( \n");
+}
+
+return 0; 
+}
+
+---------------------------------------------------------------------------
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+
+int hora;
+
+printf("Insira o horario atual no formato 24 horas: \n");
+scanf("%d", &hora);
+
+if((hora>=18 && hora<=23) || (hora>=0 && hora<5)) {
+    printf("Escuro \n ");
+}
+else{
+    printf("Claro \n ");
 }
 
 return 0; 
