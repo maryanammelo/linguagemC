@@ -71,3 +71,27 @@ else{
 
 return 0; 
 }
+-------------------------------------------------------------------------------
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+
+int imposto, total;
+
+printf("Qual o valor total que voce trouxe em compras do exterior? \n");
+scanf("%d", &total);
+
+imposto=total-500;
+
+if(total>500){
+    printf("O imposto e de %d", imposto);
+}else{
+    printf("Voce nao tera que pagar imposto");
+}
+
+return 0; 
+}
