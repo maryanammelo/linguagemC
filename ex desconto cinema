@@ -1,0 +1,24 @@
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+
+int agej, agem;
+
+printf("Digite a idade da acompanhante:\n ");
+scanf("%d", &agem);
+
+printf("Digite a idade do acompanhante: \n ");
+scanf("%d", &agej);
+
+if((agem%2==0) || (agej%2==0)){
+    printf("Desconto :) \n");
+}
+else{
+    printf("Desconto nao se aplica :( \n");
+}
+
+return 0; 
+}
