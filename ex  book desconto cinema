@@ -22,3 +22,29 @@ else{
 
 return 0; 
 }
+
+
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+
+int idoso, estudante;
+
+printf("Voce e estudante? Digite 1 para 'sim' e 2 para 'nao' \n");
+scanf("%d", &estudante);
+
+printf("Voce e idoso? Digite 1 para 'sim' e 2 para 'nao' \n");
+scanf("%d", &idoso);
+
+if((idoso==1) || (estudante==1)){
+    printf("Voce tem desconto! \n");
+}else{
+    printf("Infelizmente voce nao tem desconto :( \n");
+}
+
+return 0; 
+}
