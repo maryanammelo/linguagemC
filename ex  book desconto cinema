@@ -125,3 +125,31 @@ else {
 
 return 0; 
 }
+
+---------------------------------------------------------------------------------
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+int idade;
+
+printf("Digite sua idade e lhe direi se esta apto a votar ;) \n");
+scanf("%d", &idade);
+
+if(idade<16){
+    printf("Voce nao e eleitor :(\n");
+}
+
+else if(idade>=18 && idade<=65){
+    printf("Voce e um eleitor obrigatorio :)\n");
+}
+else if(idade>=16 || idade<=18 || idade>65){
+    printf("Voce e um eleitor facultativo :)\n ");
+}
+
+return 0; 
+}
+
