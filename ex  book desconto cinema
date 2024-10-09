@@ -95,3 +95,33 @@ if(total>500){
 
 return 0; 
 }
+
+--------------------------------------------------------------------------------
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+float salario, s1, s2, s3;
+
+printf("Digite valor do seu salario: \n");
+scanf("%f", &salario);
+
+
+if(salario <=1000){
+    s1 = salario * 1.15;
+    printf("Seu novo salario e de: R$%.2f,00 \n ", s1);
+}
+else if(salario >1000 && salario <=2000){
+    s2 = salario * 1.10;
+    printf("Seu novo salario e de: R$ %.2f,00 \n", s2);
+}
+else {
+    s3 = salario * 1.05;
+    printf("Seu novo salario e de: R$ %.2f,00 \n", s3);
+}
+
+return 0; 
+}
