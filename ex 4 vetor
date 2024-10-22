@@ -24,7 +24,7 @@ int main()
           maior = v[i];
       }
       else if(v[i]<menor){
-          menor = v[1];
+          menor = v[i];
       }
   }
   
