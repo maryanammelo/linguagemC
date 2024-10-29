@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+int main(){
+    
+    char log[100];
+    
+    printf("Digite o log:\n");
+    gets(log);
+    fflush(stdin);
+    
+    if(strstr(log,"ALERTA")!=NULL){
+        printf("Tem ALERTA na mensagem.");
+    }else{
+        printf("Não tem ALERTA na mensagem.");
+    }
+    
+    return 0;
+}
