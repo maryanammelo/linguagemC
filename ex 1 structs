@@ -3,10 +3,18 @@
 #include <math.h>
 #include <string.h>
 #include <locale.h>
+
+struct aluno{
+    char nome[50];
+    float math, port, geo, hist, cien, educ, artes;
+ 
+    };
+
+int main(){
     setlocale(LC_ALL, "Portuguese");
     
    
-    aluno a;
+    struct aluno a;
     
     printf ("Digite o nome do aluno: \n");
     fgets(a.nome,50,stdin);
