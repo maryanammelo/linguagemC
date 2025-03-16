@@ -1,0 +1,105 @@
+Nível 1 – Básico
+Par ou Ímpar
+Peça para o usuário digitar um número e diga se ele é par ou ímpar.
+ex:
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+
+int main(){
+    int num;
+    
+    printf("Digite um numero e saiba se ele é par ou impar:\n");
+    scanf("%d", &num);
+    
+    if(num % 2 == 0){
+        printf("Esse numero é par.\n");
+    } else {
+        printf("Esse numero é impar. \n ");
+    }
+    return 0; 
+}
+-----------------------------------------------------------------------
+
+Maior de Idade
+
+Peça a idade do usuário e informe se ele é maior de idade (18 anos ou mais) ou menor.
+Número Positivo ou Negativo
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+
+int main(){
+    int idade;
+    printf("Digite sua idade:\n");
+    scanf("%d", &idade);
+    
+    if(idade >= 18){
+        printf("Você é maior de idade.\n");
+    } else{
+        printf("Você é menor de idade.\n");
+    }
+    return 0;
+}
+----------------------------------------------------------------------------
+Solicite um número ao usuário e informe se ele é positivo, negativo ou zero.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+
+int main(){
+    int num;
+    printf("Digite um numero e saiba se ele é positivo negativo ou zero:\n");
+    scanf("%d", &num);
+    if(num > 0){
+        printf("O numero é positivo.\n");
+    } else if(num < 0){
+        printf("O numero é negativo.\n");
+    } else{
+        printf("O numero é 0.\n ");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------
+Nível 2 – Intermediário
+Maior entre Dois Números
+
+Peça dois números ao usuário e informe qual é o maior ou se são iguais.
+Calculadora Simples
+
+Peça dois números e uma operação (+, -, *, /). Execute a operação e mostre o resultado.
+Classificação de Notas
+
+Peça a nota de um aluno e classifique:
+Nota menor que 5: "Reprovado"
+Nota entre 5 e 7: "Recuperação"
+Nota maior ou igual a 7: "Aprovado"
+Nível 3 – Avançado
+Triângulo Válido
+
+Peça três lados e verifique se formam um triângulo (a soma de dois lados deve ser maior que o terceiro).
+Se for um triângulo, classifique como equilátero, isósceles ou escaleno.
+Ano Bissexto
+
+Peça um ano e determine se ele é bissexto (divisível por 4 e não por 100, exceto se também for divisível por 400).
+Login Simples
+
+Peça um nome de usuário e senha.
+Se forem "admin" e "1234", exiba "Acesso permitido", senão, "Acesso negado".
+Conversor de Notas para Conceito
+
+Peça uma nota de 0 a 10 e converta para conceitos:
+9-10: A
+7-8: B
+5-6: C
+3-4: D
+0-2: F
