@@ -72,11 +72,68 @@ int main(){
 ----------------------------------------------------------------------------
 Nível 2 – Intermediário
 Maior entre Dois Números
-
 Peça dois números ao usuário e informe qual é o maior ou se são iguais.
 Calculadora Simples
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+
+int main(){
+    int n1, n2;
+    printf("Digite o primeiro numero:\n");
+    scanf("%d", &n1);
+    
+    printf("Digite o segundo numero:\n");
+    scanf("%d", &n2);
+    if(n1 > n2){
+        printf("N1 é maior que N2.\n");
+    } else if(n2 > n1){
+        printf("N2 é maior que N1.\n");
+    } else{
+        printf("N1 e N2 são iguais!\n");
+    }
+    
+    return 0;
+}
+------------------------------------------------------------------------------
+
+
 Peça dois números e uma operação (+, -, *, /). Execute a operação e mostre o resultado.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+
+int main(){
+    int n1, n2;
+    char operacao;
+    
+    printf("Digite o primeiro numero:\n");
+    scanf("%d", &n1);
+    
+    printf("Digite o segundo numero:\n");
+    scanf("%d", &n2);
+    
+    printf("Digite a ooperação que você deseja realizar( + , - , *, /): \n ");
+    scanf(" %c", &operacao);
+    
+    if(operacao == '+'){
+        printf("A soma é %d. \n", n1 + n2);
+    } else if(operacao == '-'){
+        printf("A subtração é %d. \n", n1 - n2);
+    } else if(operacao == '*'){
+        printf("A multiplicação é %d. \n", n1 * n2);
+    } else{
+        printf("A divisão é %d. \n", n1 / n2);
+    }
+    return 0;
+}
+-------------------------------------------------------------------------------------
 Classificação de Notas
 
 Peça a nota de um aluno e classifique:
